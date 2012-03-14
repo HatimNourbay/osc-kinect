@@ -70,7 +70,6 @@ void  OSCKinect::OSC_SendSkeletonData( NUI_SKELETON_DATA * pSkel, int pSkelid) {
 		}
 	}
 	p << osc::EndBundle;
-	cerr << "size of bundle" << p.Size() << endl;
     m_TransmitSocket->Send( p.Data(), p.Size() );
 }
 
